@@ -2,3 +2,39 @@ html,
 body {
   min-height: 100%;
 }
+
+.menuboard-screen {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+
+  .one-screen {
+    width: 1920px;
+
+    &.two-screens {
+      width: 3840px;
+    }
+
+    &.three-screens {
+      width: 5760px;
+    }
+
+    &.four-screens {
+      width: 7680px;
+    }
+
+    .bg-advertising {
+      position: relative;
+      display: flex;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .vl {
+      z-index: 999;
+      position: absolute;
+      font-size: 2.5vw;
+      color: #fff;
+    }
+  }
+}
